@@ -1,6 +1,5 @@
 import { createStore, createHook } from 'react-sweet-state';
 
-
 const Store = createStore({
   initialState: {
     items: []
@@ -19,7 +18,6 @@ const Store = createStore({
     },
     removeItems: (id) => ({ setState, getState }) => {
         let { items } = getState();
-        console.log(items)
         items = items.filter((f)=> f.id !== id)
         setState({ items: items });
     }

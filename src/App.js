@@ -63,9 +63,6 @@ function App() {
     });
   }
 
-  console.log(items)
-  console.log(db.items.toArray())
-
   return (
     <div className="App">
       <div className={classes.cart}>
